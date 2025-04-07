@@ -1,0 +1,16 @@
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li IfModActive="dankpyon.medieval.overhaul">Mods and Shit/Medieval Overhaul</li>
+    <li IfModActive="vanillaexpanded.recycling">Mods and Shit/VE Recycling</li>
+    <li IfModActive="VanillaExpanded.VFECore">Mods and Shit/VE Furniture</li>
+    <li IfModActive="VanillaExpanded.VFESpacer">Mods and Shit/VFE Spacer</li>
+    <li IfModActive="Adamas.VendingMachines">Mods and Shit/Vending Machines</li>
+    <li IfModActive="silkcircuit.passitthroughthewindow">Mods and Shit/Pass It Through</li>
+    <li IfModActive="sarg.alphabooks">Mods and Shit/Alpha Books</li>
+    <li IfModActive="adaptive.primitivestorage">Mods and Shit/Adaptive Primitive Storage</li>
+    <li IfModActive="sbz.neatstorage">Mods and Shit/Neat Storage</li>
+    <li IfModActive="OskarPotocki.VFE.Mechanoid">Mods and Shit/VFE Mechanoids</li>
+    <li IfModActive="oskarpotocki.vfe.medieval2">Mods and Shit/VFE Medieval 2</li>
+  </v1.5>
+</loadFolders>

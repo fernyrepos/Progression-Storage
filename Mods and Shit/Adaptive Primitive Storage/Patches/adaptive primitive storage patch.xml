@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+
+<!-- RELABEL -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/label</xpath>
+                    <value>
+                        <label>primitive weapon rack</label>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/label</xpath>
+                    <value>
+                        <label>covered pot</label>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/label</xpath>
+                    <value>
+                        <label>uncovered pot</label>
+                    </value>
+                </Operation>
+<!-- GETTING RID OF STUFF -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_StoragePit"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_CellarStone"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_CellarWood"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_MeatRack"]</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation>
+
+
+
+<!-- WOOD PATCH -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+			<li>Reel's Expanded Storage</li>
+		</mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+	</Operation>
+</Patch>

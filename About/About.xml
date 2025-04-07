@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Progression: Storage</name>
+	<author>ferny</author>
+	<packageId>ferny.progressionstorage</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>adaptive.storage.framework</packageId>
+			<displayName>Adaptive Storage Framework</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3033901359</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>ferny.propscore</packageId>
+			<displayName>More Prop Categories</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3167021055</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description>Integrates storage mods into Vanilla progression.</description>
+	<loadAfter>
+		<li>Ludeon.Rimworld</li>
+		<li>Ludeon.Rimworld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>Ludeon.Rimworld.Biotech</li>
+		<li>Ludeon.Rimworld.Anomaly</li>
+		<li>reel.expanded.storage</li>
+		<li>dankpyon.medieval.overhaul</li>
+		<li>ferny.progressionaesthetics</li>
+		<li>VanillaExpanded.Recycling</li>
+		<li>VanillaExpanded.VFECore</li>
+		<li>ferny.propscore</li>
+		<li>ferny.fuckextfurniture</li>
+		<li>Adamas.VendingMachines</li>
+		<li>silkcircuit.passitthroughthewindow</li>
+		<li>sarg.alphabooks</li>
+		<li>adaptive.primitivestorage</li>
+		<li>sbz.neatstorage</li>
+		<li>OskarPotocki.VFE.Mechanoid</li>
+		<li>oskarpotocki.vfe.medieval2</li>
+	</loadAfter>
+</ModMetaData>
