@@ -124,21 +124,12 @@
 
                     <li Class="PatchOperationRemove">
                         <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
-                        <value>
-                            <li>WoodLog</li>
-                        </value>
                     </li>
                     <li Class="PatchOperationRemove">
                         <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
-                        <value>
-                            <li>WoodLog</li>
-                        </value>
                     </li>
                     <li Class="PatchOperationRemove">
                         <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
-                        <value>
-                            <li>WoodLog</li>
-                        </value>
                     </li>
                     <li Class="PatchOperationRemove">
                         <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
