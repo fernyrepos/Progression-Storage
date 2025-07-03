@@ -80,18 +80,48 @@
 		</mods>
             <match Class="PatchOperationSequence">
                 <operations>
-                    <li Class="PatchOperationAdd">
+                    <li Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x1c"]</xpath>
                         <value>
                             <designationCategory></designationCategory>
                         </value>
                     </li>
-                    <li Class="PatchOperationAdd">
+                    <li Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x2c"]</xpath>
                         <value>
                             <designationCategory></designationCategory>
                         </value>
                     </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs2x2c"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/stuffCategories</xpath>
+                        <value>
+                            <stuffCategories>
+                                <li>DankPyon_RawWood</li>
+                            </stuffCategories>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/stuffCategories</xpath>
+                        <value>
+                            <stuffCategories>
+                                <li>DankPyon_RawWood</li>
+                            </stuffCategories>
+                        </value>
+                    </li>
+
+
+
+
+
+
                     <li Class="PatchOperationRemove">
                         <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
                         <value>
