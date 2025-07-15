@@ -19,18 +19,6 @@
                         </value>
                         </li>
                         <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodCrate"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodCrate"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]</xpath>
                         <value>
                             <designationCategory></designationCategory>
@@ -56,12 +44,6 @@
                         </li>
                         <li Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageBarrel"]</xpath>
                         <value>
                             <designationCategory></designationCategory>
                         </value>
@@ -118,12 +100,6 @@
                         </value>
                         </li>
                         <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageBarrel"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites></researchPrerequisites>
@@ -145,12 +121,6 @@
                         <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/researchPrerequisites</xpath>
                         <value>
                             <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodCrate"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
                         </value>
                         </li>
                         <li Class="PatchOperationReplace">
@@ -189,6 +159,10 @@
                     </operations>
                     </match>
                 </Operation>
+
+
+
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="DankPyon_StorageBase"]/designationCategory</xpath>
                     <value>
