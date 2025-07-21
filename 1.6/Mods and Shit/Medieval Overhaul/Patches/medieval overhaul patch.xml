@@ -144,6 +144,32 @@
                             </prerequisites>
                         </value>
                         </li>
+                    <!-- new july 17 2025 -->
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+
 
                         <!-- ERASE SHIT -->
 
@@ -767,13 +793,33 @@
 
 
 
-
-
-
-
-
-
-
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Adaptive Primitive Storage</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x1c"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs2x2c"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x2c"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
 
 
 

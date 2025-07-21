@@ -106,6 +106,39 @@
                     </li>
 
                     <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="sbz_Crate"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]</xpath>
+                        <value>
+                            <designationCategory></designationCategory>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
                         <value>
                             <designationCategory></designationCategory>

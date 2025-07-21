@@ -80,25 +80,25 @@
 		</mods>
             <match Class="PatchOperationSequence">
                 <operations>
-                    <li Class="PatchOperationReplace">
+
+                    <!-- <li Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x1c"]</xpath>
                         <value>
                             <designationCategory></designationCategory>
                         </value>
                     </li>
-                    <li Class="PatchOperationReplace">
+                    <li Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x2c"]</xpath>
                         <value>
                             <designationCategory></designationCategory>
                         </value>
                     </li>
-                    <li Class="PatchOperationReplace">
+                    <li Class="PatchOperationAdd">
                         <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs2x2c"]</xpath>
                         <value>
                             <designationCategory></designationCategory>
                         </value>
-                    </li>
-
+                    </li> -->
 
                     <li Class="PatchOperationReplace">
                         <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/stuffCategories</xpath>
@@ -137,6 +137,7 @@
                 </operations>
             </match>
 	</Operation>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Reel's Expanded Storage</li>
