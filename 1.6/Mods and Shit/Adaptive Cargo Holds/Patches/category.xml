@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Replace cargo hold def categories with progression storage category -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_SqCargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_CargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_RefCargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_2x2CargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_MassCargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_SmCargoComp"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_nCargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_nRefCargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_n2x2CargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_nMassCargoHold"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_XMCH"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="jdgg_XMCHVB"]</xpath>
+        <value>
+            <designationCategory>ASFstorage</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
