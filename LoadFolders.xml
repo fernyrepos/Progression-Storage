@@ -28,6 +28,6 @@
     <li IfModActive="sbz.neatstorage">1.6/Mods and Shit/Neat Storage</li>
     <li IfModActive="OskarPotocki.VFE.Mechanoid">1.6/Mods and Shit/VFE Mechanoids</li>
     <li IfModActive="oskarpotocki.vfe.medieval2">1.6/Mods and Shit/VFE Medieval 2</li>
-    <li IfModActive="jdgg.adaptive.cargoholds">1.6/Mods and Shit/Adaptive Cargo Holds</li>
+    <li IfModActive="jdgg.adaptive.cargoholds">1.6/Mods and Shit/Cargo Holds</li>
   </v1.6>
 </loadFolders>
