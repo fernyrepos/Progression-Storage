@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<!-- NERFS/OVERHAULS -->
+
+<!-- Snorri changes - start -->
+
+		<!-- Snorri: I changed it's storage space from 6 to 2, Incresed work needed, changed beatuy from 1 to 4, incresed Flammability from 1 to 1.2,
+		lowered cost from 75 to 25, removed ability to storage chunks, corpses, animals and buildings  -->
+
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/description</xpath>
+                    <value>
+                        <description>A woven basket designed for storing various items. Items stored inside do not affect the beauty of their surroundings.\n\nTotal Capacity: 2 Stacks\n\nRotate to change appearance.</description>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>2</maxItemsInCell>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>4</Beauty>
+							<MaxHitPoints>15</MaxHitPoints>
+							<WorkToBuild>200</WorkToBuild>
+							<Flammability>1.2</Flammability>
+							<Mass>5</Mass>
+						</statBases>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/costList</xpath>
+					<value>
+						<costList>
+							<Hay>25</Hay>
+						</costList>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building</xpath>
+					<value>
+						<defaultStorageSettings>
+							<priority>Preferred</priority>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</defaultStorageSettings>
+						<fixedStorageSettings>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+					</value>
+				</Operation>
+
+		<!-- Snorri: I changed it's storage space from 12 to 4, Incresed work needed, changed beatuy from 1 to 2, incresed Flammability from 1 to 1.2,
+		lowered cost from 150 to 75, removed ability to storage chunks, corpses, animals and buildings  -->
+
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/description</xpath>
+                    <value>
+                        <description>A woven basket designed for storing various items. Items stored inside do not affect the beauty of their surroundings.\n\nTotal Capacity: 4 Stacks\n\nRotate to change appearance.</description>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>4</maxItemsInCell>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>2</Beauty>
+							<MaxHitPoints>20</MaxHitPoints>
+							<WorkToBuild>340</WorkToBuild>
+							<Flammability>1.2</Flammability>
+							<Mass>7</Mass>
+						</statBases>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/costList</xpath>
+					<value>
+						<costList>
+							<Hay>75</Hay>
+						</costList>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building</xpath>
+					<value>
+						<defaultStorageSettings>
+							<priority>Preferred</priority>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</defaultStorageSettings>
+						<fixedStorageSettings>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+					</value>
+				</Operation>
+
+		<!-- Snorri: I changed it's storage space from 18 to 6, Incresed work needed, incresed Flammability from 1 to 1.2,
+		lowered cost from 280 to 180, removed ability to storage chunks, corpses, animals and buildings  -->
+	            <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/description</xpath>
+                    <value>
+                        <description>A woven basket designed for storing various items. Items stored inside do not affect the beauty of their surroundings.\n\nTotal Capacity: 6 Stacks\n\nRotate to change appearance.</description>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>6</maxItemsInCell>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>1</Beauty>
+							<MaxHitPoints>25</MaxHitPoints>
+							<WorkToBuild>460</WorkToBuild>
+							<Flammability>1.2</Flammability>
+							<Mass>9</Mass>
+						</statBases>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/costList</xpath>
+					<value>
+						<costList>
+							<Hay>180</Hay>
+						</costList>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/building</xpath>
+					<value>
+						<defaultStorageSettings>
+							<priority>Preferred</priority>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</defaultStorageSettings>
+						<fixedStorageSettings>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+					</value>
+				</Operation>
+
+		<!-- Snorri: I changed it's storage space from 3 to 4, lowered work needed, removed ability to storage chunks, corpses, animals, weapons, Apparel and buildings  -->
+
+				 <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>4</maxItemsInCell>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>4</Beauty>
+							<MaxHitPoints>140</MaxHitPoints>
+							<WorkToBuild>1000</WorkToBuild>
+							<Flammability>0</Flammability>
+							<Mass>15</Mass>
+						</statBases>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/building</xpath>
+					<value>
+						<defaultStorageSettings>
+							<priority>Preferred</priority>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+								</categories>
+							</filter>
+						</defaultStorageSettings>
+						<fixedStorageSettings>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+					</value>
+				</Operation>
+
+
+<!-- Snorri: I changed it's storage space from 3 to 4, lowered work needed, removed ability to storage chunks, corpses, animals, weapons, Apparel and buildings  -->
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>4</maxItemsInCell>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>4</Beauty>
+							<MaxHitPoints>140</MaxHitPoints>
+							<WorkToBuild>1000</WorkToBuild>
+							<Flammability>0.2</Flammability>
+							<Mass>15</Mass>
+						</statBases>
+					</value>
+				</Operation>
+				<Operation Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/building</xpath>
+					<value>
+						<defaultStorageSettings>
+							<priority>Preferred</priority>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+								</categories>
+							</filter>
+						</defaultStorageSettings>
+						<fixedStorageSettings>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+					</value>
+				</Operation>
+
+<!-- Snorri: I changed it's cost from 75 blocks of stone to 150 and 50 hay to 120.   -->
+
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_Granary"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>150</costStuffCount>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_Granary"]/costList</xpath>
+                    <value>
+						<costList>
+							<Hay>120</Hay>
+							<WoodLog>25</WoodLog>
+						</costList>
+                    </value>
+                </Operation>
+
+
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ASF_StorageTent"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+
+<!-- end of Snorri changes  -->
+
+<!-- RELABEL -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/label</xpath>
+                    <value>
+                        <label>primitive weapon rack</label>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/label</xpath>
+                    <value>
+                        <label>covered pot</label>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/label</xpath>
+                    <value>
+                        <label>uncovered pot</label>
+                    </value>
+                </Operation>
+
+
+<!-- WOOD PATCH -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyAdaptivePrimitiveMedOvProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>DankPyon_WoodLogs1x1c</li>
+									<li>DankPyon_WoodLogs1x2c</li>
+									<li>DankPyon_WoodLogs2x2c</li>
+									<li>ASF_MeatRack</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/stuffCategories</xpath>
+                        <value>
+                            <stuffCategories>
+                                <li>DankPyon_RawWood</li>
+                            </stuffCategories>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/stuffCategories</xpath>
+                        <value>
+                            <stuffCategories>
+                                <li>DankPyon_RawWood</li>
+                            </stuffCategories>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/defaultStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/building/fixedStorageSettings/filter/thingDefs/li[text()='WoodLog']</xpath>
+                    </li>
+                </operations>
+            </match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Reel's Expanded Storage</li>
+		</mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyAdaptivePrimitiveReelStorageProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>ReelStorageWoodPile</li>
+									<li>ReelStorageLargeWoodPile</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+	</Operation>
+</Patch>

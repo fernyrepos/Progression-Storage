@@ -23,43 +23,6 @@
         </nomatch>
     </Operation>
 
-
-<!-- CORE PATCHES -->
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="ShelfSmall"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Shelf"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="BookcaseBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="Bookcase"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="BookcaseSmall"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
 <!-- ZONE PATCHES -->
 	<Operation Class="PatchOperationAdd">
     <success>Always</success>

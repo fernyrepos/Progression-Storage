@@ -77,6 +77,10 @@
 			<li>DankPyon_Stall_Herb</li>
 			<li>DankPyon_Stall_MeleeWeapons</li>
 			<li>DankPyon_Stall_Bow</li>
+			<li>DankPyon_SackApple</li>
+			<li>DankPyon_SackFlour</li>
+			<li>DankPyon_SackPotato</li>
+			<li>DankPyon_SackWheat</li>
 		</hiddenDesignators>							
 	</VEF.Buildings.HiddenDesignatorsDef>
 </Defs>

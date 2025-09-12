@@ -2,18 +2,6 @@
 <Patch>        
 
 
-
-
-<!-- GETTING RID OF STUFF -->
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="sbz_CorpseSpot"]</xpath>
-                    <value>
-                        <designationCategory></designationCategory>
-                    </value>
-                </Operation>
-
-
-
 <!-- RELABEL -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="sbz_Crate"]/label</xpath>
@@ -106,42 +94,20 @@
                     </li>
 
                     <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="sbz_Crate"]</xpath>
+                        <xpath>Defs</xpath>
                         <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="sbz_WeaponRack"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelNewIndustrialShelf"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                    </li>
-
-                    <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="sbz_MeatHook"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyNeatStorageReelStorageProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>sbz_MeatHook</li>
+                                    <li>ReelNewIndustrialShelf</li>
+                                    <li>sbz_WeaponRack</li>
+                                    <li>sbz_HorizontalWeaponRack</li>
+                                    <li>sbz_VerticalWeaponRack</li>
+                                    <li>sbz_SmallCrate</li>
+                                    <li>sbz_Crate</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
                         </value>
                     </li>
                 </operations>

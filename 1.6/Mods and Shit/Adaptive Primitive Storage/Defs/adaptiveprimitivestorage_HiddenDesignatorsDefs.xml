@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VEF.Buildings.HiddenDesignatorsDef>
+		<defName>FernyAdaptivePrimitiveProgStorage_HiddenDesignators</defName>
+		<hiddenDesignators>			
+			<li>ASF_StoragePit</li>
+			<li>ASF_CellarStone</li>
+			<li>ASF_CellarWood</li>
+			<li>ASF_MeatRack</li>
+		</hiddenDesignators>							
+	</VEF.Buildings.HiddenDesignatorsDef>
+</Defs>

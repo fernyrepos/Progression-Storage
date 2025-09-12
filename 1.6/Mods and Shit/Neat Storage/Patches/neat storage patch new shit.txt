@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+<!-- Snorri changes - start -->
+
+				<!-- Snorri: vanilla   -->
+
+<!-- Snorri: changed it's storage space per cell from 3 to 6 -->
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Shelf"]/building</xpath>
+                    <value>
+                        <maxItemsInCell>7</maxItemsInCell>
+                    </value>
+                </Operation>
+				
+	<!-- Snorri: changed it's storage space per cell from 3 to 6 -->			
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ShelfSmall"]/building</xpath>
+                    <value>
+                        <maxItemsInCell>7</maxItemsInCell>
+                    </value>
+                </Operation>
+
+				<!-- Snorri: Reel's Expanded Storage   -->
+<!-- Snorri: I changed it's storage space from 8 per cell to 3 (it's graphic have 6 hooks, so now it should be more fitted to that), adjusted description   -->
+   
+				
+				  <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/description</xpath>
+                    <value>
+                        <description>A civilized storage rack designed to hold wine and other alcoholic beverages for enjoyment or trade. Items stored inside will not deteriorate over time. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 6 
+Stack per tile: 6 
+
+Allowed items: Beer, Wine, Simple Spirits, Luxury Spirits</description>
+                    </value>
+                </Operation>
+	<!-- Snorri: changed it's storage space per cell from 10 to 6, incresed Beauty from 0 to 6 -->			
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>6</maxItemsInCell>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/statBases/Beauty</xpath>
+					<value>
+							<Beauty>6</Beauty>
+                    </value>
+                </Operation>
+				
+<!-- Snorri: I changed it's storage space from 8 per cell to 3 (it's graphic have 6 hooks, so now it should be more fitted to that), adjusted description   -->
+   
+				
+				  <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/description</xpath>
+                    <value>
+                        <description>Rack to hold raw meat and corpses for butchering or disposal. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings, however you will still need to freeze them. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 6 
+Stack per tile: 3 
+
+Allowed items: Raw meat, Fish, Corpses</description>
+                    </value>
+                </Operation>
+				 <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>3</maxItemsInCell>
+                    </value>
+                </Operation>
+				
+	   <!-- Snorri: I changed it's storage space from 9 per cell to 6, adjusted description    -->
+	   
+	   	            <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/description</xpath>
+                    <value>
+                        <description>Storage container to hold food for feeding your animals. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 12 
+Stack per tile: 6 
+
+Allowed items: Hay, Kibble</description>
+                    </value>
+                </Operation>
+				 <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/building/maxItemsInCell</xpath>
+                    <value>
+                        <maxItemsInCell>6</maxItemsInCell>
+                    </value>
+                </Operation>
+
+ <!-- Snorri: I changed it's storage space from 9 per cell to 6, changed beauty from 0 to 8 (primitive rack have 1), adjusted description    -->
+
+	   
+	   	            <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/description</xpath>
+                    <value>
+                        <description>Rack to display melee and ranged weapons. Items stored inside will not deteriorate over time. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 8 
+Stack per tile: 4 
+
+Allowed items: Melee weapons, Ranged weapons.</description>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/statBases/Beauty</xpath>
+					<value>
+							<Beauty>8</Beauty>
+                    </value>
+                </Operation>
+				
+	<!-- Snorri: [sbz] Neet Storage   -->
+
+	<!-- Snorri: changed beauty from 1 to 4 -->
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_DisplayCabinet"]/statBases</xpath>
+					<value>
+						<Beauty>4</Beauty>
+                    </value>
+                </Operation>
+        
+	<!-- Snorri: changed beauty from 1 to 4 -->			
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_NarrowDisplayCabinet"]</xpath>
+					<value>
+                    <statBases>
+						<Beauty>4</Beauty>
+                    </statBases>
+                    </value>
+                </Operation>
+
+	<!-- Snorri: lowered beauty from 0 to -8, removed ability to store corpses, hides from MO (they are bugged to storage anyway) -->
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_Crate"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-8</Beauty>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Crate"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+				
+	<!-- Snorri: lowered beauty from 0 to -4, removed ability to store corpses, hides from MO (they are bugged to storage anyway) -->
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-4</Beauty>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_MidCrate"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+	<!-- Snorri: lowered beauty from 0 to -2, removed ability to store corpses, hides from MO (they are bugged to storage anyway) -->
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-2</Beauty>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+	<!-- Snorri: lowered beauty from 0 to -8, removed ability to store corpses, hides from MO (they are bugged to storage anyway) -->
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_Pallet"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-8</Beauty>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+	<!-- Snorri: lowered beauty from 0 to -2, removed ability to store corpses, hides from MO (they are bugged to storage anyway) -->
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-2</Beauty>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+				
+				<!-- Snorri changes - end -->
+
+<!-- RELABEL -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_Crate"]/label</xpath>
+                    <value>
+                        <label>large container</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_MidCrate"]/label</xpath>
+                    <value>
+                        <label>medium container</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/label</xpath>
+                    <value>
+                        <label>small container</label>
+                    </value>
+                </Operation>
+
+
+
+<!-- VE FURNITURE -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="Shelf_WeaponRack"]/label</xpath>
+                        <value>
+                            <label>small weapon rack</label>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/costStuffCount</xpath>
+                        <value>
+                            <costStuffCount>50</costStuffCount>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+	</Operation>
+
+
+
+
+
+
+<!-- REEL -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Reel's Expanded Storage</li>
+		</mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>ReelNeolithicStorage</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>ReelNeolithicStorage</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>ReelNeolithicStorage</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>ReelIndustrialStorage</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyNeatStorageReelStorageProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>sbz_MeatHook</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+	</Operation>
+
+<!-- MEDIEVAL OVERHAUL -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+            <match Class="PatchOperationSequence">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>DankPyon_RusticStorage</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>DankPyon_RusticStorage</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>DankPyon_RusticStorage</li>
+                            </researchPrerequisites>
+                        </value>
+                    </li>
+                </operations>
+            </match>
+	</Operation>
+
+</Patch>

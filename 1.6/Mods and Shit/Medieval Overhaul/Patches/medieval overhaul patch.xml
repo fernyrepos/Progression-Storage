@@ -1,194 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-                <Operation Class="PatchOperationFindMod">
-                    <mods>
-                    <li>Reel's Expanded Storage</li>
-                    </mods>
-                    <match Class="PatchOperationSequence">
-                    <operations>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeStonePile"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationAdd">
-                        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-
-                        <!-- RESEARCH MERGING -->
-
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeStonePile"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]/prerequisites</xpath>
-                        <value>
-                            <prerequisites>
-                            <li>Electricity</li>
-                            <li>DankPyon_RusticStorage</li>
-                            </prerequisites>
-                        </value>
-                        </li>
-                    <!-- new july 17 2025 -->
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/researchPrerequisites</xpath>
-                        <value>
-                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
-                        </value>
-                        </li>
-
-
-                        <!-- ERASE SHIT -->
-
-                        <li Class="PatchOperationRemove">
-                        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
-                        </li>
-                        <li Class="PatchOperationRemove">
-                        <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
-                        </li>
-                        <li Class="PatchOperationRemove">
-                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]</xpath>
-                        </li>
-                    </operations>
-                    </match>
-                </Operation>
 
 
 
-
+<!-- Base changes -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="DankPyon_StorageBase"]/designationCategory</xpath>
                     <value>
@@ -238,20 +53,9 @@
                         <designationCategory>ASFstorage</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x1c"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x2c"]</xpath>
-                    <value>
-                        <designationCategory>ASFstorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DankPyon_Bricks2x2c"]</xpath>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_BrickStorageBase"]/designationCategory</xpath>
                     <value>
                         <designationCategory>ASFstorage</designationCategory>
                     </value>
@@ -701,6 +505,19 @@
                     <researchPrerequisites Inherit="false"/>
                 </value>
                 </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Dairy"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_HayPile1x2c"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]/designationCategory</xpath>
                     <value>
@@ -785,13 +602,160 @@
 
 
 
+<!-- Reel Overlap/Patches -->
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Reel's Expanded Storage</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
+                        <value>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyMedievalOverhaulReelStorageProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>ReelStorageHayBale</li>
+                                    <li>ReelStorageLargeWoodPile</li>
+                                    <li>ReelStorageWoodPile</li>
+                                    <li>ReelStorageStonePile</li>
+                                    <li>ReelStorageLargeStonePile</li>
+                                    <li>ReelStorageWoodChest</li>
+                                    <li>ReelStorageTanningRack</li>
+                                    <li>ReelStorageBookshelf</li>
+                                    <li>ReelStorageLargeWoodChest</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
+                        </value>
+                    </li>
+
+                        <!-- RESEARCH MERGING -->
+
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeStonePile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                            <li>Electricity</li>
+                            <li>DankPyon_RusticStorage</li>
+                            </prerequisites>
+                        </value>
+                        </li>
+                    <!-- new july 17 2025 -->
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewBarrel"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewLargeWoodCrate"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageNewWoodCrate"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
 
 
+                        <!-- ERASE SHIT -->
 
-
-
-
-
+                        <li Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
 
                 <Operation Class="PatchOperationFindMod">
                     <mods>
@@ -799,24 +763,19 @@
                     </mods>
                     <match Class="PatchOperationSequence">
                     <operations>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x1c"]/designationCategory</xpath>
+                    <li Class="PatchOperationAdd">
+                        <xpath>Defs</xpath>
                         <value>
-                            <designationCategory></designationCategory>
+							<VEF.Buildings.HiddenDesignatorsDef>
+								<defName>FernyMedievalOverhaulAdaptivePrimitiveProgStorage_HiddenDesignators</defName>
+								<hiddenDesignators>
+									<li>DankPyon_WoodLogs1x1c</li>
+                                    <li>DankPyon_WoodLogs2x2c</li>
+                                    <li>DankPyon_WoodLogs1x2c</li>
+								</hiddenDesignators>
+							</VEF.Buildings.HiddenDesignatorsDef>
                         </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs2x2c"]/designationCategory</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
-                        <li Class="PatchOperationReplace">
-                        <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x2c"]/designationCategory</xpath>
-                        <value>
-                            <designationCategory></designationCategory>
-                        </value>
-                        </li>
+                    </li>
                     </operations>
                     </match>
                 </Operation>
@@ -850,6 +809,38 @@
 			</li>
 		</operations>
 	</Operation>
+
+
+<!-- Sacks -->
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackFlour"]/designatorDropdown</xpath>
+                </Operation>
+                <!-- <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackWheat"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackPotato"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackApple"]/designatorDropdown</xpath>
+                </Operation> -->
+
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@Name="DankPyon_HideoutSackBase"]/designatorDropdown</xpath>
+                </Operation>
+
+
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/DesignatorDropdownGroupDef[defName="DankPyon_Sack"]</xpath>
+                </Operation>
+
+
 </Patch>
 
         

@@ -15,5 +15,10 @@
                         <label>small container</label>
                     </value>
                 </Operation>
-
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="ReelStorageBarrelPallet"]/label</xpath>
+                    <value>
+                        <label>chemfuel pallet</label>
+                    </value>
+                </Operation>5
 </Patch>

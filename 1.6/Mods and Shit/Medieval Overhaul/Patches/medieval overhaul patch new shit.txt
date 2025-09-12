@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Snorri changes - start -->
+
+<!-- Snorri: I changed it's storage space from 3 to 4, removed ability to storage chunks, corpses, animals, weapons, Apparel and buildings  -->
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]</xpath>
+                    <value>
+                    <building>
+                        <maxItemsInCell>4</maxItemsInCell>
+                    </building>
+                    <defaultStorageSettings>
+                        <priority>Preferred</priority>
+                        <filter>
+                            <categories>
+                                <li>Foods</li>
+                                <li>Manufactured</li>
+                                <li>ResourcesRaw</li>
+                                <li>Items</li>
+                            </categories>
+                        </filter>
+                    </defaultStorageSettings>
+                    <fixedStorageSettings>
+                        <filter>          
+                            <categories>
+                                <li>Foods</li>
+                                <li>Manufactured</li>
+                                <li>ResourcesRaw</li>
+                                <li>Items</li>
+                            </categories>
+                        </filter>
+                    </fixedStorageSettings>
+                    </value>
+                </Operation>
+				
+<!-- Snorri: I changed it's storage space from 3 to 6,incresed cost from 10 to 30, incresed Flammability to 1.2, decresed beaty from 0 to -5, removed ability to storage corpses and animals  -->
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>7</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+							<Beauty>-5</Beauty>
+							<MaxHitPoints>40</MaxHitPoints>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_Linen>30</DankPyon_Linen>
+						</costList>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+
+<!-- Snorri: I changed it's storage space from 12 to 24,incresed cost from 40 to 100, incresed Flammability to 1.2, decresed beaty from 0 to -15, removed ability to storage corpses and animals  -->
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>8</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+							<Beauty>-20</Beauty>
+							<MaxHitPoints>120</MaxHitPoints>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]/costList</xpath>
+					<value>
+						<costList>
+							<DankPyon_Linen>120</DankPyon_Linen>
+						</costList>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+				
+	<!-- Snorri: I changed it's storage space from 3 to 5, incresed cost from 10 to 30,  lowered beauty from 0 to -2, removed ability to storage corpses and animals  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x1c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x1c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-2</Beauty>
+							<MaxHitPoints>70</MaxHitPoints>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x1c"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>30</costStuffCount>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x1c"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+				
+	<!-- Snorri: I changed it's storage space from 3 per cell to 5, incresed cost from 30 to 60, lowered beauty from 0 to -3, removed ability to storage corpses and animals  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x2c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-3</Beauty>
+							<MaxHitPoints>90</MaxHitPoints>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x2c"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>60</costStuffCount>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x2c"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+				
+	<!-- Snorri: I changed it's storage space from 3 per cell to 5, incresed cost from 30 to 60, lowered beauty from 0 to -3, removed ability to storage corpses and animals  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>-6</Beauty>
+							<MaxHitPoints>180</MaxHitPoints>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2c"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>120</costStuffCount>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2c"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+									<li>Buildings</li>
+									<li>Chunks</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>	
+				
+	<!-- Snorri: I changed it's storage space from 3 per cell to 4, removed ability to storage corpses, buildings, chunks and animals  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>4</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>	
+
+<!-- Snorri: I changed it's storage space from 3 per cell to 4, removed ability to storage corpses, buildings, chunks and animals  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>5</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+
+<!-- Snorri: I changed it's storage space from 3 per cell to 4, removed ability to storage corpses, buildings, chunks and animals  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>5</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>	
+
+<!-- Snorri: I changed it's storage space from 3 per cell to 4, removed ability to storage corpses, buildings, chunks and animals  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>5</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>	
+
+<!-- Snorri: I changed it's storage space from 12 to 24,incresed cost from 40 to 100, incresed Flammability to 1.2, decresed beaty from 0 to -15, removed ability to storage corpses and animals  -->
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>2</Beauty>
+							<MaxHitPoints>80</MaxHitPoints>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>40</costStuffCount>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>	
+
+<!-- Snorri: I changed it's storage space from 12 to 24,incresed cost from 40 to 100, incresed Flammability to 1.2, decresed beaty from 0 to -15, removed ability to storage corpses and animals  -->
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MetalStrongbox"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Beauty>6</Beauty>
+							<MaxHitPoints>160</MaxHitPoints>
+						</statBases>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MetalStrongbox"]/costStuffCount</xpath>
+					<value>
+						<DankPyon_IronIngot>30</DankPyon_IronIngot>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_MetalStrongbox"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>		
+
+<!-- Snorri: I changed it's storage space from 12 to 24,incresed cost from 40 to 100, incresed Flammability to 1.2, decresed beaty from 0 to -15, removed ability to storage corpses and animals  -->
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RoyalChest"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_RoyalChest"]</xpath>
+					<value>
+						<building>
+						<fixedStorageSettings>
+							<filter>          
+								<categories>
+									<li>Foods</li>
+									<li>Manufactured</li>
+									<li>ResourcesRaw</li>
+									<li>Items</li>
+									<li>Weapons</li>
+									<li>Apparel</li>
+								</categories>
+							</filter>
+						</fixedStorageSettings>
+						</building>
+					</value>
+                </Operation>
+
+	<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>
+				
+	<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>
+				
+	<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>
+
+	<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>
+				
+	<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>
+	
+	<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>
+				
+		<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>			
+
+		<!-- Snorri: I changed it's storage space from 4 per cell to 6, incresed Flammability from 1 to 1.2,  -->
+
+				 <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_HayPile1x2c"]</xpath>
+                    <value>
+						<building>
+                        <maxItemsInCell>6</maxItemsInCell>
+						</building>
+                    </value>
+                </Operation>
+				<Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_HayPile1x2c"]/statBases</xpath>
+					<value>
+						<statBases>
+							<Flammability>1.2</Flammability>
+						</statBases>
+                    </value>
+                </Operation>
+			
+				
+<!-- SNORRI: I changed "Rustic storage" from medieval into a Neolithic era, and replaced "medieval furniture" with "basic woodworking" as prerequisites -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_RusticStorage"]/prerequisites</xpath>
+			<value>
+                <prerequisites><li>DankPyon_Lumber</li></prerequisites>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="DankPyon_RusticStorage"]/techLevel</xpath>
+		<value>
+			<techLevel>Neolithic</techLevel>
+		</value>
+	</Operation>
+		
+
+<!-- Snorri changes - end -->
+
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Reel's Expanded Storage</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs</xpath>
+                            <value>
+                                <VEF.Buildings.HiddenDesignatorsDef>
+                                    <defName>FernyMedievalOverhaulReelStorageProgStorage_HiddenDesignators</defName>
+                                    <hiddenDesignators>
+                                        <li>ReelStorageHayBale</li>
+                                        <li>ReelStorageLargeWoodPile</li>
+                                        <li>ReelStorageWoodCrate</li>
+                                        <li>ReelStorageLargeWoodCrate</li>
+                                        <li>ReelStorageWoodPile</li>
+                                        <li>ReelStorageStonePile</li>
+                                        <li>ReelStorageWoodChest</li>
+                                        <li>ReelStorageTanningRack</li>
+                                        <li>ReelStorageBarrel</li>
+                                        <li>ReelStorageBookshelf</li>
+                                    </hiddenDesignators>
+                                </VEF.Buildings.HiddenDesignatorsDef>
+                            </value>
+                        </li>
+
+                        <!-- RESEARCH MERGING -->
+
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWoodChest"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageHayBale"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWeaponRack"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWoodPile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageStonePile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <!-- <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageBarrel"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li> -->
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageBookshelf"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageAnimalFeeder"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageMeatHook"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeStonePile"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageWineRack"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelIndustrialStorage"]/prerequisites</xpath>
+                        <value>
+                            <prerequisites>
+                            <li>Electricity</li>
+                            <li>DankPyon_RusticStorage</li>
+                            </prerequisites>
+                        </value>
+                        </li>
+
+                        <!-- ERASE SHIT -->
+
+                        <li Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelNeolithicStorage"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                        <xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]</xpath>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigGrape"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelWoodLog"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelIronOre"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelSilverOre"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelGoldOre"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelRawPlasteel"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelCoalOre"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelTextiles"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelLeather"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelComponentBasic"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_BarrelGrape"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Bread"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Grain"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Large_Meat_Shelf"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Cheese"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Wine"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Mead"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Vegetables"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Bones"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Unhold"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Lindwurm"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RackEmpty"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RackSword"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RackSpear"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledEmerald"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSapphire"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledRuby"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSilverware"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledGoldware"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceSilver"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceGold"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledWine"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledFood"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledIngot"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledBook"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedHerbs"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_GreenHerbs"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_RedHerbs"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_BattleElixir"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_HappyPowder"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_VigorPill"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedDrugsA"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Stardust"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Luhix"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Paregoric"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedDrugsB"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Empty"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Assorted"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Ore"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_PlantRaw"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Textiles"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_RawWood"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Meats"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Bread"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Dairy"]</xpath>
+                <value>
+                    <researchPrerequisites Inherit="false"/>
+                </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="DankPyon_VanillaShelfBase"]</xpath>
+                    <value>
+                    <thingClass>Building_Storage</thingClass>
+                    <inspectorTabs><li>ITab_Storage</li></inspectorTabs>
+                    <building>
+                        <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+                        <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+                        <maxItemsInCell>10</maxItemsInCell>
+                        <fixedStorageSettings Inherit="false">
+                            <filter>
+                                <categories>
+                                    <li>Root</li>
+                                </categories>
+                                <disallowedCategories>
+                                    <li>Chunks</li>
+                                    <li>Corpses</li>
+                                    <li>Animals</li>
+                                    <li>Plants</li>
+                                </disallowedCategories>
+                            </filter>
+                        </fixedStorageSettings>
+                        <defaultStorageSettings Inherit="false"/>
+                    </building>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Shelf"]</xpath>
+                <value>
+                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="ShelfSmall"]</xpath>
+                <value>
+                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="Bookcase"]</xpath>
+                <value>
+                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="BookcaseSmall"]</xpath>
+                <value>
+                    <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="DankPyon_RusticStorage"]</xpath>
+                    <value>
+                        <tags>
+                            <li>ClassicStart</li>
+                        </tags>
+                    </value>
+                </Operation>
+
+
+<!-- FEEDDANOOB'S ERROR REMOVALS -->
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,reel.expanded.storage">
+				<xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/AdaptiveStorage.GraphicsDef[@Name="ReelStorageLargeWoodChestBase"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/AdaptiveStorage.GraphicsDef[@*="ReelStorageLargeWoodChestBase"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional" MayRequire="DankPyon.Medieval.Overhaul,reel.expanded.storage">
+				<xpath>Defs/ResearchProjectDef[defName="ReelMedievalStorage"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/researchPrerequisites[li="ReelMedievalStorage"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef/researchPrerequisites/li[text()="ReelMedievalStorage"]</xpath>
+					</match>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackFlour"]/designatorDropdown</xpath>
+                </Operation>
+                <!-- <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackWheat"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackPotato"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackApple"]/designatorDropdown</xpath>
+                </Operation> -->
+
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@Name="DankPyon_HideoutSackBase"]/designatorDropdown</xpath>
+                </Operation>
+
+
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/DesignatorDropdownGroupDef[defName="DankPyon_Sack"]</xpath>
+                </Operation>
+
+
+
+</Patch>
+
+        
