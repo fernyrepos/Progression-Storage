@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+
+<!-- GRAVSHIP SUBSTRUCTURE NEEDED -->
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Odyssey</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[defName="jdgg_SqCargoHold"]/terrainAffordanceNeeded</xpath>
+                            <value>
+                                <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[defName="jdgg_CargoHold"]/terrainAffordanceNeeded</xpath>
+                            <value>
+                                <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>Defs/ThingDef[defName="jdgg_RefCargoHold"]/terrainAffordanceNeeded</xpath>
+                            <value>
+                                <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                            </value>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
+</Patch>

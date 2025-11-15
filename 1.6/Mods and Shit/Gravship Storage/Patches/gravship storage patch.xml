@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+
+<!-- GRAVSHIP SUBSTRUCTURE NEEDED -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzGravshipShelfBase"]</xpath>
+                    <value>
+                        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzSmallGravshipShelfBase"]</xpath>
+                    <value>
+                        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="sbzGravshipCrateBase"]</xpath>
+                    <value>
+                        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                    </value>
+                </Operation>
+
+
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_GravshipWeaponRack"]</xpath>
+                    <value>
+                        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_GravshipWeaponRack"]</xpath>
+                    <value>
+                        <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+                    </value>
+                </Operation>
+
+</Patch>
