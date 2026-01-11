@@ -743,7 +743,12 @@
                             <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
                         </value>
                         </li>
-
+                        <li Class="PatchOperationReplace">
+                        <xpath>Defs/ThingDef[defName="ReelStorageLargeWoodChest"]/researchPrerequisites</xpath>
+                        <value>
+                            <researchPrerequisites><li>DankPyon_RusticStorage</li></researchPrerequisites>
+                        </value>
+                        </li>
 
                         <!-- ERASE SHIT -->
 
