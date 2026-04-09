@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Pallets: set research to ReelIndustrialStorage -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>ReelIndustrialStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>ReelIndustrialStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
+		<value>
+			<researchPrerequisites Inherit="false">
+				<li>ReelIndustrialStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!-- Hide Tall Crate (covered by Reel's Large Crate) -->
+	<!-- <Operation Class="PatchOperationAdd">
+		<xpath>Defs/VEF.Buildings.HiddenDesignatorsDef[defName="FernyNeatStorageReelStorageProgStorage_HiddenDesignators"]/hiddenDesignators</xpath>
+		<value>
+			<li>sbz_TallCrate</li>
+		</value>
+	</Operation> -->
+
+</Patch>

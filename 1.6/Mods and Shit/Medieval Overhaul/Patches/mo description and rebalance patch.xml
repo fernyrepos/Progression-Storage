@@ -1,0 +1,2800 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+ <!-- Missing 4/tile stack size patches -->
+
+  <!-- Crates -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Bones"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Unhold"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Lindwurm"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Sacks -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Rustic Barrels -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigGrape"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Shelves -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledEmerald"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSapphire"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledRuby"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSilverware"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledGoldware"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceSilver"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceGold"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Carts -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Empty"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Assorted"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Cupboards -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Large Shelf -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Chests -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_MetalStrongbox"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RoyalChest"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- Market Stalls -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Empty"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>4</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <!-- 4/tile -->
+  
+  <!-- Crates -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x1c"]</xpath>
+    <value>
+      <description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x2c"]</xpath>
+    <value>
+      <description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2c"]</xpath>
+    <value>
+      <description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Bones"]</xpath>
+    <value>
+      <description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Unhold"]</xpath>
+    <value>
+      <description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2_Lindwurm"]</xpath>
+    <value>
+      <description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- Sacks -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackClosed"]</xpath>
+    <value>
+      <description>A robust fabric bag designed to store objects in a more efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack1x1c"]</xpath>
+    <value>
+      <description>A robust fabric bag designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BundledSack2x2c"]</xpath>
+    <value>
+      <description>A robust fabric bag designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- Rustic Barrels -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelClosed"]</xpath>
+    <value>
+      <description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosed"]</xpath>
+    <value>
+      <description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigGrape"]</xpath>
+    <value>
+      <description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigClosedDown"]</xpath>
+    <value>
+      <description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelStack"]</xpath>
+    <value>
+      <description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- Shelves -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfEmpty"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled1c"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilled2c"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledEmerald"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSapphire"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledRuby"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledSilverware"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledGoldware"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceSilver"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledChaliceGold"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- Carts -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Empty"]</xpath>
+    <value>
+      <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. Can be used to store items.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Assorted"]</xpath>
+    <value>
+      <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. Can hold up to 4 stacks of items.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- Cupboards -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]</xpath>
+    <value>
+      <description>An open cupboard to store and display objects in an efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- Large Shelf -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelfEmpty"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- 8/tile -->
+
+  <!-- Bales -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bale1x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Hay</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_HayBale2x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Hay</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale1x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Straw</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_StrawBale2x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Straw</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale1x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Flax</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_FlaxBale2x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Flax</description>
+    </value>
+  </Operation>
+
+  <!-- Piles -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_HayPile1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_HayPile1x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Hay</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_StrawPile1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_StrawPile1x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Straw</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_FlaxPile1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_FlaxPile1x2c"]</xpath>
+    <value>
+      <description>A collective pile of straw, flax, and hay fashioned to conserve space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Flax</description>
+    </value>
+  </Operation>
+
+  <!-- Wood Logs -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x1c"]</xpath>
+    <value>
+      <description>Logs that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Wood logs</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs1x2c"]</xpath>
+    <value>
+      <description>Logs that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Wood logs</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_WoodLogs2x2c"]</xpath>
+    <value>
+      <description>Logs that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Wood logs</description>
+    </value>
+  </Operation>
+
+  <!-- Timber -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x1c"]</xpath>
+    <value>
+      <description>Timber that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Timber</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x2c"]</xpath>
+    <value>
+      <description>Timber that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Timber</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Timber2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Timber2x2c"]</xpath>
+    <value>
+      <description>Timber that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Timber</description>
+    </value>
+  </Operation>
+
+  <!-- Bricks -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x1c"]</xpath>
+    <value>
+      <description>Bricks that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Stone blocks</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x2c"]</xpath>
+    <value>
+      <description>Bricks that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Stone blocks</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bricks2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Bricks2x2c"]</xpath>
+    <value>
+      <description>Bricks that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Stone blocks</description>
+    </value>
+  </Operation>
+
+  <!-- Iron -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IronIngots1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IronIngots1x1c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Iron ingots</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IronIngots1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IronIngots1x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Iron ingots</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IronIngots2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IronIngots2x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Iron ingots</description>
+    </value>
+  </Operation>
+
+  <!-- Steel -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SteelIngots1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SteelIngots1x1c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Steel</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SteelIngots1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SteelIngots1x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Steel</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SteelIngots2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SteelIngots2x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Steel</description>
+    </value>
+  </Operation>
+
+  <!-- Silver -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SilverIngots1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SilverIngots1x1c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Silver ingots</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SilverIngots1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SilverIngots1x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Silver ingots</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SilverIngots2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SilverIngots2x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Silver ingots</description>
+    </value>
+  </Operation>
+
+  <!-- Gold -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_GoldIngots1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_GoldIngots1x1c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Gold ingots</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_GoldIngots1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_GoldIngots1x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Gold ingots</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_GoldIngots2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_GoldIngots2x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Gold ingots</description>
+    </value>
+  </Operation>
+
+  <!-- Plasteel -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Plasteel1x1c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Plasteel1x1c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Plasteel</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Plasteel1x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Plasteel1x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Plasteel</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Plasteel2x2c"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Plasteel2x2c"]</xpath>
+    <value>
+      <description>Ingots that are stacked in an efficient manner to save more space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Plasteel</description>
+    </value>
+  </Operation>
+
+  <!-- Barrels -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelWoodLog"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelWoodLog"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for wood to save space. Can hold up to 4 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Wood logs</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelIronOre"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelIronOre"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 4 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Iron ore</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelSilverOre"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelSilverOre"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 4 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Silver ore</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelGoldOre"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelGoldOre"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 4 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Gold ore</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelRawPlasteel"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelRawPlasteel"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 4 stacks of raw plasteel. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Raw plasteel</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelCoalOre"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelCoalOre"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 4 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Coal</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelTextiles"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelTextiles"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for textiles to save space.  up to 4 stacks of textiles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Textiles</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelLeather"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelLeather"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for leather to save space. Can hold up to 4 stacks of leather. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Leather</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelComponentBasic"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelComponentBasic"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for basic components to save space. Can hold up to 4 stacks of basic components. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Components</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelGrape"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_BarrelGrape"]</xpath>
+    <value>
+      <description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 4 stacks of grapes. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Grapes</description>
+    </value>
+  </Operation>
+
+  <!-- Cupboards -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]</xpath>
+    <value>
+      <description>An open cupboard to store and display objects in an efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Bread</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]</xpath>
+    <value>
+      <description>An open cupboard to store and display objects in an efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Cheese</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]</xpath>
+    <value>
+      <description>An open cupboard to store and display objects in an efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Wine</description>
+    </value>
+  </Operation>
+
+  <!-- Large Shelves -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Bread"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Bread"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Bread</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Grain"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Grain"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Grain</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Large_Meat_Shelf"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Large_Meat_Shelf"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Raw meat</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Cheese"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Cheese"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Cheese</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Wine"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Wine"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Wine</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Mead"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Mead"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Mead</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Vegetables"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf_Vegetables"]</xpath>
+    <value>
+      <description>A large square platform designed to store things, keeping them clean and off the ground.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Vegetables</description>
+    </value>
+  </Operation>
+
+  <!-- Sacks -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackFlour"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackFlour"]</xpath>
+    <value>
+      <description>A robust fabric bag designed to store objects in a more efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Flour</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackWheat"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackWheat"]</xpath>
+    <value>
+      <description>A robust fabric bag designed to store objects in a more efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Wheat</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackPotato"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackPotato"]</xpath>
+    <value>
+      <description>A robust fabric bag designed to store objects in a more efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Potato</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackApple"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_SackApple"]</xpath>
+    <value>
+      <description>A robust fabric bag designed to store objects in a more efficient manner.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Berries</description>
+    </value>
+  </Operation>
+
+  <!-- Carts -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Ore"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Ore"]</xpath>
+    <value>
+      <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Raw ores</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_PlantRaw"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_PlantRaw"]</xpath>
+    <value>
+      <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Raw plants</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Textiles"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_Textiles"]</xpath>
+    <value>
+      <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Textiles</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_RawWood"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Storage_Cart_RawWood"]</xpath>
+    <value>
+      <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Raw wood</description>
+    </value>
+  </Operation>
+
+  <!-- Racks -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackEmpty"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>6</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackEmpty"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackSword"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>6</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackSword"]</xpath>
+    <value>
+      <description>A rack for storing swords in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackSpear"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>6</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackSpear"]</xpath>
+    <value>
+      <description>A rack for storing spears in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>6</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RackMixed"]</xpath>
+    <value>
+      <description>A rack for storing weapons in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+  <!-- Filled Shelves -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledWine"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledWine"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Drugs</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledFood"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledFood"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Meals</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledIngot"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledIngot"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Metals</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledBook"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_ShelfFilledBook"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Schematics</description>
+    </value>
+  </Operation>
+
+  <!-- Herb Shelves -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedHerbs"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedHerbs"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Herbs, herbal medicine</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_GreenHerbs"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_GreenHerbs"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Green herbs, herbal medicine</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_RedHerbs"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_RedHerbs"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Red herbs</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_BattleElixir"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_BattleElixir"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Battle elixir</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_HappyPowder"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_HappyPowder"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Happy powder</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_VigorPill"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_VigorPill"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Vigor pill</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedDrugsA"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedDrugsA"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Battle elixir, happy powder, vigor pill</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedDrugsB"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_AssortedDrugsB"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Stardust, luhix, paregoric</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Stardust"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Stardust"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Stardust</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Luhix"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Luhix"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Luhix</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Paregoric"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Shelf_Paregoric"]</xpath>
+    <value>
+      <description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Paregoric</description>
+    </value>
+  </Operation>
+
+
+
+
+  <!-- Chests -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RusticChest"]</xpath>
+    <value>
+      <description>A trusty wooden chest to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.Multiple chests do not stack comfort bonuses.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_MetalStrongbox"]</xpath>
+    <value>
+      <description>A trusty metal strongbox to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_RoyalChest"]</xpath>
+    <value>
+      <description>An ornate chest store by the nobles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <!-- Market Tables -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Meats"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Meats"]</xpath>
+    <value>
+      <description>A table filled to display meat.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Raw meat</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Dairy"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Dairy"]</xpath>
+    <value>
+      <description>A table filled to display dairy goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Dairy goods</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Bread"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Bread"]</xpath>
+    <value>
+      <description>A table filled to display bread goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Bread</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Herb"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Herb"]</xpath>
+    <value>
+      <description>A table filled to display herb goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Herbs, medicine</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_MeleeWeapons"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_MeleeWeapons"]</xpath>
+    <value>
+      <description>A table filled to display melee weapons.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Bow"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_TableMarket_Bow"]</xpath>
+    <value>
+      <description>A table filled to display bows.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+  <!-- Market Stalls -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Empty"]</xpath>
+    <value>
+      <description>An empty table used to diplay goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 4
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Meats"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Meats"]</xpath>
+    <value>
+      <description>A table filled to display meat goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Raw meat</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Dairy"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Dairy"]</xpath>
+    <value>
+      <description>A table filled to display dairy goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Dairy goods</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Bread"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Bread"]</xpath>
+    <value>
+      <description>A table filled to display bread goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Bread</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Herb"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Herb"]</xpath>
+    <value>
+      <description>A table filled to display herb goods.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Herbs, medicine</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_MeleeWeapons"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_MeleeWeapons"]</xpath>
+    <value>
+      <description>A table filled to display weapons.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Bow"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_Stall_Bow"]</xpath>
+    <value>
+      <description>A table filled to display bows.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 24
+Stack per tile: 8
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+  <!-- Ice Cellar -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IceCellar"]</xpath>
+    <value>
+      <building>
+        <maxItemsInCell>8</maxItemsInCell>
+      </building>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="DankPyon_IceCellar"]</xpath>
+    <value>
+      <description>The cellar is designed to properly store ice blocks, preventing them from melting.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Ice blocks</description>
+    </value>
+  </Operation>
+
+
+
+
+
+
+
+
+
+
+</Patch>
+
+        

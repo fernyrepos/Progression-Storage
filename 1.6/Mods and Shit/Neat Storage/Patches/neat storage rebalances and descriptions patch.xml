@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Research: bases to ComplexFurniture -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="sbzCrateBase"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>ComplexFurniture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>ComplexFurniture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>ComplexFurniture</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<!-- Crate base: 6 to 8 stacks/tile -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<!-- Display shelves: to 8 stacks/tile -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_DisplayShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_SmallDisplayShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_OpenShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_TwoTierDisplayShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_TallDisplayShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_NarrowTallDisplayShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<!-- Hanger shelves: to 10 stacks/tile -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>10</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>10</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<!-- Specialized industrial: to 15 stacks/tile -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_TextileRack"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>15</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>18</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Drum"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>15</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<!-- Filters -->
+
+	<!-- Crate: Root minus Foods, FoodMeals, Corpses, Chunks -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sbz_MidCrate"]</xpath>
+		<value>
+			<building>
+				<fixedStorageSettings>
+					<filter>
+						<disallowNotEverStorable>true</disallowNotEverStorable>
+						<categories Inherit="False">
+							<li>Root</li>
+						</categories>
+						<disallowedCategories Inherit="False">
+							<li>Foods</li>
+							<li>FoodMeals</li>
+							<li>Corpses</li>
+							<li>Chunks</li>
+						</disallowedCategories>
+					</filter>
+				</fixedStorageSettings>
+			</building>
+		</value>
+	</Operation>
+
+	<!-- Pallets: unrestricted -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sbz_MiniPallet"]</xpath>
+		<value>
+			<building>
+				<fixedStorageSettings>
+					<filter>
+						<disallowNotEverStorable>true</disallowNotEverStorable>
+						<categories Inherit="False">
+							<li>Root</li>
+						</categories>
+					</filter>
+				</fixedStorageSettings>
+			</building>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sbz_HalfPallet"]</xpath>
+		<value>
+			<building>
+				<fixedStorageSettings>
+					<filter>
+						<disallowNotEverStorable>true</disallowNotEverStorable>
+						<categories Inherit="False">
+							<li>Root</li>
+						</categories>
+					</filter>
+				</fixedStorageSettings>
+			</building>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="sbz_Pallet"]</xpath>
+		<value>
+			<building>
+				<fixedStorageSettings>
+					<filter>
+						<disallowNotEverStorable>true</disallowNotEverStorable>
+						<categories Inherit="False">
+							<li>Root</li>
+						</categories>
+					</filter>
+				</fixedStorageSettings>
+			</building>
+		</value>
+	</Operation>
+
+	<!-- <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/fixedStorageSettings/filter</xpath>
+		<value>
+			<filter>
+				<disallowNotEverStorable>true</disallowNotEverStorable>
+				<allowedDefNames>
+					<li>Silver</li>
+				</allowedDefNames>
+			</filter>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/defaultStorageSettings/filter</xpath>
+		<value>
+			<filter>
+				<disallowNotEverStorable>true</disallowNotEverStorable>
+				<allowedDefNames>
+					<li>Silver</li>
+				</allowedDefNames>
+			</filter>
+		</value>
+	</Operation> -->
+
+	<!-- Drum: restrict to ResourcesRaw, Foods -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Drum"]/building/fixedStorageSettings/filter</xpath>
+		<value>
+			<filter>
+				<disallowNotEverStorable>true</disallowNotEverStorable>
+				<categories Inherit="False">
+					<li>ResourcesRaw</li>
+					<li>Foods</li>
+				</categories>
+			</filter>
+		</value>
+	</Operation>
+
+	<!-- Descriptions -->
+
+	<!-- Crate (2x1, 8/tile, 16 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_MidCrate"]/description</xpath>
+		<value>
+			<description>A sturdy wooden crate for storing dry goods and materials. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Everything except Foods, Meals, Corpses, and Chunks</description>
+		</value>
+	</Operation>
+
+	<!-- Mini Pallet (1x1, 8/tile, 8 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_MiniPallet"]/description</xpath>
+		<value>
+			<description>A small wooden pallet for stacking goods of any kind. Items stored on top will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Half Pallet (2x1, 8/tile, 16 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_HalfPallet"]/description</xpath>
+		<value>
+			<description>A wooden pallet for stacking goods of any kind. Items stored on top will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Pallet (2x2, 8/tile, 32 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Pallet"]/description</xpath>
+		<value>
+			<description>A large wooden pallet for stacking goods of any kind. Items stored on top will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Display Shelf (2x1, 8/tile, 16 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_DisplayShelf"]/description</xpath>
+		<value>
+			<description>A sturdy display shelf for organizing and storing various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Small Display Shelf (1x1, 8/tile, 8 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_SmallDisplayShelf"]/description</xpath>
+		<value>
+			<description>A compact display shelf for organizing and storing various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Open Shelf (2x1, 8/tile, 16 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_OpenShelf"]/description</xpath>
+		<value>
+			<description>An open shelf for organizing and displaying various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- 2-Tier Display Shelf (2x1, 8/tile, 16 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_TwoTierDisplayShelf"]/description</xpath>
+		<value>
+			<description>A two-tiered display shelf for organizing and storing various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Tall Display Shelf (2x1, 8/tile, 16 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_TallDisplayShelf"]/description</xpath>
+		<value>
+			<description>A tall display shelf for organizing and storing various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 16
+Stack per tile: 8
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Narrow Tall Display Shelf (1x1, 8/tile, 8 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_NarrowTallDisplayShelf"]/description</xpath>
+		<value>
+			<description>A narrow, tall display shelf for organizing and storing various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Hanger Shelf (2x1, 10/tile, 20 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_WideHangerShelf"]/description</xpath>
+		<value>
+			<description>A wide clothes hanger rack for keeping apparel organized and accessible. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 20
+Stack per tile: 10
+
+Allowed items: Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Narrow Hanger Shelf (1x1, 10/tile, 10 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_HangerShelf"]/description</xpath>
+		<value>
+			<description>A narrow clothes hanger rack for keeping apparel organized and accessible. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 10
+Stack per tile: 10
+
+Allowed items: Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Textile Rack (1x1, 15/tile, 15 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_TextileRack"]/description</xpath>
+		<value>
+			<description>A sturdy metal rack designed for holding textiles and fabrics. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 15
+Stack per tile: 15
+
+Allowed items: Textiles</description>
+		</value>
+	</Operation>
+
+	<!-- Safe (1x1, 18/tile, 18 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/description</xpath>
+		<value>
+			<description>A secure metal safe for storing silver. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 18
+Stack per tile: 18
+
+Allowed items: Silver</description>
+		</value>
+	</Operation>
+
+	<!-- Drum (1x1, 15/tile, 15 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Drum"]/description</xpath>
+		<value>
+			<description>A sealed metal drum for storing raw resources and food supplies in bulk. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 15
+Stack per tile: 15
+
+Allowed items: Raw resources, Foods</description>
+		</value>
+	</Operation>
+
+	<!-- Tall Crate (2x2, 8/tile, 32 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_TallCrate"]/description</xpath>
+		<value>
+			<description>A tall wooden crate for storing large quantities of goods. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Large Crate (2x2, 8/tile, 32 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Crate"]/description</xpath>
+		<value>
+			<description>A large wooden crate for storing large quantities of goods. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Small Crate (1x1, 8/tile, 8 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/description</xpath>
+		<value>
+			<description>A small wooden crate for storing goods. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 8
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Corpse Dump Spot (1x1, 12/tile, 12 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_CorpseSpot"]/description</xpath>
+		<value>
+			<description>A designated spot for stacking corpses. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 12
+
+Allowed items: Corpses</description>
+		</value>
+	</Operation>
+
+	<!-- Meat Hook (2x1, 6/tile, 12 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_MeatHook"]/description</xpath>
+		<value>
+			<description>A rack of hooks for hanging raw meat and corpses. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Raw meat, Corpses</description>
+		</value>
+	</Operation>
+
+	<!-- Weapon Rack (2x1, 3/tile, 6 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_WeaponRack"]/description</xpath>
+		<value>
+			<description>A rack for displaying and storing weapons. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 3
+
+Allowed items: Weapons</description>
+		</value>
+	</Operation>
+
+	<!-- Horizontal Weapon Rack (2x1, 6/tile, 12 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_HorizontalWeaponRack"]/description</xpath>
+		<value>
+			<description>A horizontal rack for displaying and storing weapons. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Weapons</description>
+		</value>
+	</Operation>
+
+	<!-- Vertical Weapon Rack (2x1, 6/tile, 12 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_VerticalWeaponRack"]/description</xpath>
+		<value>
+			<description>A vertical rack for displaying and storing weapons. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Weapons</description>
+		</value>
+	</Operation>
+
+	<!-- Display Cabinet (2x1, 4/tile, 8 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_DisplayCabinet"]/description</xpath>
+		<value>
+			<description>A display cabinet for organizing and storing various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 4
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Narrow Display Cabinet (1x1, 4/tile, 4 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_NarrowDisplayCabinet"]/description</xpath>
+		<value>
+			<description>A narrow display cabinet for organizing and storing various items. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Display Case (1x1, 1/tile, 1 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_DisplayTable"]/description</xpath>
+		<value>
+			<description>A small display case for showcasing a single item. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 1
+Stack per tile: 1
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- Round Pedestal (1x1, 1/tile, 1 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_RoundPedestal"]/description</xpath>
+		<value>
+			<description>A round pedestal for showcasing a single item. Items stored will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 1
+Stack per tile: 1
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items, Weapons, Apparel</description>
+		</value>
+	</Operation>
+
+	<!-- DisplayShelf GraphicsDef: tighten items for 8 capacity (was 3) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_DisplayShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.10,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.10)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.10)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(0.13,0,-0.05)</drawOffset>
+								<drawOffsetEast>(0.32,0.1,0.05)</drawOffsetEast>
+								<drawOffsetWest>(-0.32,0.1,0.05)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.65</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c0>
+					<c1>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.10,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.10)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.10)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(-0.24,0.05,-0.05)</drawOffset>
+								<drawOffsetEast>(0.32,0,-0.302)</drawOffsetEast>
+								<drawOffsetWest>(-0.32,0,-0.302)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.65</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c1>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- SmallDisplayShelf GraphicsDef: tighten items for 8 capacity (was 3) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_SmallDisplayShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.04,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.07)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.07)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(0,0,-0.05)</drawOffset>
+								<drawOffsetEast>(0.32,0.1,-0.05)</drawOffsetEast>
+								<drawOffsetWest>(-0.32,0.1,-0.05)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.55</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c0>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- TwoTierDisplayShelf GraphicsDef: tighten items for 8 capacity (was 6) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TwoTierDisplayShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.15,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.16)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.16)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(0.13,0.8,0.5)</drawOffset>
+								<drawOffsetEast>(0.3,0.2,0.8)</drawOffsetEast>
+								<drawOffsetWest>(-0.3,0.2,0.8)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.75</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c0>
+					<c1>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.15,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.16)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.16)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(-0.87,0,-0.05)</drawOffset>
+								<drawOffsetEast>(0.32,0.1,-0.95)</drawOffsetEast>
+								<drawOffsetWest>(-0.32,0.1,-0.95)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.75</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c1>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- TallDisplayShelf GraphicsDef: tighten items for 8 capacity (was 6) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TallDisplayShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0,0,0.09)</stackOffset>
+								<stackOffsetEast>(0,0.01,0.12)</stackOffsetEast>
+								<stackOffsetWest>(0,0.01,0.12)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(0,0,-0.1)</drawOffset>
+								<drawOffsetEast>(0.3,0.1,0.85)</drawOffsetEast>
+								<drawOffsetWest>(-0.3,0.1,0.85)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.75</drawScale>
+								<rotation>90</rotation>
+							</r0>
+						</rows>
+					</c0>
+					<c1>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0,0,0.09)</stackOffset>
+								<stackOffsetEast>(0,0.01,0.12)</stackOffsetEast>
+								<stackOffsetWest>(0,0.01,0.12)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(0,0,-0.1)</drawOffset>
+								<drawOffsetEast>(0.32,0.2,-0.95)</drawOffsetEast>
+								<drawOffsetWest>(-0.32,0.2,-0.95)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.75</drawScale>
+								<rotation>90</rotation>
+							</r0>
+						</rows>
+					</c1>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- NarrowTallDisplayShelf GraphicsDef: tighten items for 8 capacity (was 6) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_NarrowTallDisplayShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0,0,0.09)</stackOffset>
+								<stackOffsetEast>(0,0.01,0.12)</stackOffsetEast>
+								<stackOffsetWest>(0,0.01,0.12)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(0,0,-0.1)</drawOffset>
+								<drawOffsetEast>(0.3,0.1,0)</drawOffsetEast>
+								<drawOffsetWest>(-0.3,0.1,0)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.75</drawScale>
+								<rotation>90</rotation>
+							</r0>
+						</rows>
+					</c0>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- OpenShelf GraphicsDef: tighten items for 8 capacity (was 6) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_OpenShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.17,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.13)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.13)</stackOffsetWest>
+								<drawOffset>(0.09,2.05,0.45)</drawOffset>
+								<drawOffsetEast>(0,2.05,0.65)</drawOffsetEast>
+								<drawOffsetWest>(0,2.05,0.65)</drawOffsetWest>
+								<drawScale>0.7</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c0>
+					<c1>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.17,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.13)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.13)</stackOffsetWest>
+								<drawOffset>(-0.91,0,-0.10)</drawOffset>
+								<drawOffsetEast>(0,0.1,-0.95)</drawOffsetEast>
+								<drawOffsetWest>(0,0.1,-0.95)</drawOffsetWest>
+								<drawScale>0.7</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c1>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- HangerShelf GraphicsDef: shrink items for 10 capacity (was 4) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_HangerShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.03,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.06)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.06)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(-0.03,0,0.28)</drawOffset>
+								<drawOffsetEast>(0.3,0.2,0.2)</drawOffsetEast>
+								<drawOffsetWest>(-0.3,0.2,0.2)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.5</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c0>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- WideHangerShelf GraphicsDef: shrink items for 10 capacity (was 4) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_WideHangerShelfASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.08,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.07)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.07)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(0.05,0,0.28)</drawOffset>
+								<drawOffsetEast>(0.3,0.2,0.7)</drawOffsetEast>
+								<drawOffsetWest>(-0.3,0.2,0.7)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.55</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c0>
+					<c1>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0.08,0,0)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.07)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.07)</stackOffsetWest>
+								<stackOffsetNorth>(0,0,0)</stackOffsetNorth>
+								<drawOffset>(-0.31,0.05,0.28)</drawOffset>
+								<drawOffsetEast>(0.3,0.1,0.3)</drawOffsetEast>
+								<drawOffsetWest>(-0.3,0.1,0.3)</drawOffsetWest>
+								<drawOffsetNorth>(0,0,1000)</drawOffsetNorth>
+								<drawScale>0.55</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c1>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- TextileRack GraphicsDef: scale building appearance thresholds for 15 capacity -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TextileRackASF"]/graphics/li[3]/minimumStackCount</xpath>
+		<value>
+			<minimumStackCount>3</minimumStackCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TextileRackASF"]/graphics/li[4]/minimumStackCount</xpath>
+		<value>
+			<minimumStackCount>5</minimumStackCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TextileRackASF"]/graphics/li[5]/minimumStackCount</xpath>
+		<value>
+			<minimumStackCount>7</minimumStackCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TextileRackASF"]/graphics/li[6]/minimumStackCount</xpath>
+		<value>
+			<minimumStackCount>10</minimumStackCount>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TextileRackASF"]/graphics/li[7]/minimumStackCount</xpath>
+		<value>
+			<minimumStackCount>13</minimumStackCount>
+		</value>
+	</Operation>
+
+	<!-- TextileRack GraphicsDef: split items into 3 rows of 5 instead of 1 infinite stack -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_TextileRackASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0,0.25,0.07)</stackOffset>
+								<drawOffset>(0,0,-0.2)</drawOffset>
+								<drawScale>0.5</drawScale>
+								<rotation>45</rotation>
+							</r0>
+							<r1>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0,0.25,0.07)</stackOffset>
+								<drawOffset>(0,0,0.1)</drawOffset>
+								<drawScale>0.5</drawScale>
+								<rotation>45</rotation>
+							</r1>
+							<r2>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0,0.25,0.07)</stackOffset>
+								<drawOffset>(0,0,0.4)</drawOffset>
+								<drawScale>0.5</drawScale>
+								<rotation>45</rotation>
+							</r2>
+						</rows>
+					</c0>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+</Patch>

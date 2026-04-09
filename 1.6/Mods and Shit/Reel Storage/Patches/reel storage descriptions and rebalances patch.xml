@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Apparel Locker: 10 to 15 stacks/tile -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>15</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ReelStorageNewLargeLocker"]/description</xpath>
+		<value>
+			<description>A large metal locker with a window designed to keep your apparel safe, secure, and easily accessible for outfitting your colonists. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 30
+Stack per tile: 15
+
+Allowed items: Apparel, Armor, Headgear</description>
+		</value>
+	</Operation>
+
+	<!-- Vanilla Bookcase (2x1, 5/tile, 10 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Bookcase"]/description</xpath>
+		<value>
+			<description>A wide bookcase for storing and displaying books. Books stored here enhance nearby academic work and increase beauty. Stored books will not deteriorate. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 10
+Stack per tile: 5
+
+Allowed items: Books</description>
+		</value>
+	</Operation>
+
+	<!-- Vanilla Small Bookcase (1x1, 5/tile, 5 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BookcaseSmall"]/description</xpath>
+		<value>
+			<description>A narrow bookcase for storing and displaying books. Books stored here enhance nearby academic work and increase beauty. Stored books will not deteriorate. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 5
+Stack per tile: 5
+
+Allowed items: Books</description>
+		</value>
+	</Operation>
+
+	<!-- VFE Weapon Rack (2x1, 3/tile, 6 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Shelf_WeaponRack"]/description</xpath>
+		<value>
+			<description>A steel rack for storing and displaying weapons. Items stored will not deteriorate and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 3
+
+Allowed items: Weapons</description>
+		</value>
+	</Operation>
+
+</Patch>

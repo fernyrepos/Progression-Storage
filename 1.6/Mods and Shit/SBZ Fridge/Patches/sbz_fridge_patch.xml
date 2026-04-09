@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[@Name="sbzFridgeBase"]/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_Fridges</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="sbz_CorpseFridge"]/researchPrerequisites</xpath>
+    <value>
+      <researchPrerequisites>
+        <li>Ferny_Fridges</li>
+      </researchPrerequisites>
+    </value>
+  </Operation>
+
+
+	<!-- Fridge: 2 to 6 stacks/tile -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Fridge"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>6</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Fridge"]/description</xpath>
+		<value>
+			<description>A fridge that freezes stored items when powered. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 6
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items</description>
+		</value>
+	</Operation>
+
+	<!-- Fridge GraphicsDef: fix item overflow for 6 capacity (was 2) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName="sbz_FridgeASF"]/itemGraphics</xpath>
+		<value>
+			<itemGraphics>
+				<columns>
+					<c0>
+						<rows>
+							<r0>
+								<stackBehaviour>Stack</stackBehaviour>
+								<stackOffset>(0,-0.05,0.12)</stackOffset>
+								<stackOffsetEast>(0,-0.02,0.08)</stackOffsetEast>
+								<stackOffsetWest>(0,-0.02,0.08)</stackOffsetWest>
+								<stackOffsetSouth>(0,0,0)</stackOffsetSouth>
+								<drawOffset>(0,0.6,0.15)</drawOffset>
+								<drawOffsetEast>(-0.1,0.1,0.15)</drawOffsetEast>
+								<drawOffsetWest>(0.1,0.1,0.15)</drawOffsetWest>
+								<drawOffsetSouth>(0,0,1000)</drawOffsetSouth>
+								<drawScale>0.5</drawScale>
+								<rotation>0</rotation>
+							</r0>
+						</rows>
+					</c0>
+				</columns>
+			</itemGraphics>
+		</value>
+	</Operation>
+
+	<!-- Large Fridge (2x1, 6/tile, 12 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_LargeFridge"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>6</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_LargeFridge"]/description</xpath>
+		<value>
+			<description>A large fridge that freezes stored items when powered. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items</description>
+		</value>
+	</Operation>
+
+	<!-- Single Chest Fridge (1x1, 3/tile, 3 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_SingleChestFridge"]/description</xpath>
+		<value>
+			<description>A chest fridge that freezes stored items when powered. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 3
+Stack per tile: 3
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items</description>
+		</value>
+	</Operation>
+
+	<!-- Double Chest Fridge (2x1, 3/tile, 6 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_DoubleChestFridge"]/description</xpath>
+		<value>
+			<description>A double chest fridge that freezes stored items when powered. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 3
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items</description>
+		</value>
+	</Operation>
+
+	<!-- Single Wall Fridge (1x1, 3/tile, 3 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_SingleWallFridge"]/description</xpath>
+		<value>
+			<description>A wall-mounted fridge that freezes stored items when powered. Cannot support a roof. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 3
+Stack per tile: 3
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items</description>
+		</value>
+	</Operation>
+
+	<!-- Double Wall Fridge (2x1, 3/tile, 6 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_DoubleWallFridge"]/description</xpath>
+		<value>
+			<description>A double wall-mounted fridge that freezes stored items when powered. Cannot support a roof. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 3
+
+Allowed items: Foods, Manufactured goods, Raw resources, Items</description>
+		</value>
+	</Operation>
+
+	<!-- Corpse Fridge (2x2, 5/tile, 20 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_CorpseFridge"]/description</xpath>
+		<value>
+			<description>A fridge for storing corpses. Freezes stored items when powered. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 20
+Stack per tile: 5
+
+Allowed items: Corpses</description>
+		</value>
+	</Operation>
+
+</Patch>

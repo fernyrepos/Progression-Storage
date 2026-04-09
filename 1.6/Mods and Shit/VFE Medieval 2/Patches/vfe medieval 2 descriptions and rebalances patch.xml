@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- VFE Medieval 2 - Ailments Shelf (6/tile capacity) -->
+  <PatchOperation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]/building/maxItemsInCell</xpath>
+    <value>
+      <maxItemsInCell>6</maxItemsInCell>
+    </value>
+  </PatchOperation>
+
+  <PatchOperation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]/description</xpath>
+    <value>
+      <description>A small wooden cabinet that can be stocked with herbal remedies, tinctures, and basic medicinal tools. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 6
+
+Allowed items: Herbs, medicine, drugs</description>
+    </value>
+  </PatchOperation>
+
+</Patch>

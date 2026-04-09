@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Woven Basket: 6 to 2 stacks/tile, 75 to 50 hay -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>2</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/costList/Hay</xpath>
+		<value>
+			<Hay>50</Hay>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/description</xpath>
+		<value>
+			<description>A simple woven basket for storing a small number of goods. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 2
+Stack per tile: 2
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Woven Basket Double: 12 to 3 stacks/tile, 150 to 75 hay -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>3</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/costList/Hay</xpath>
+		<value>
+			<Hay>75</Hay>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/description</xpath>
+		<value>
+			<description>A larger woven basket with extra capacity for storing goods. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 3
+Stack per tile: 3
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Woven Basket Triple: 18 to 4 stacks/tile, 225 to 100 hay -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>4</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/costList/Hay</xpath>
+		<value>
+			<Hay>100</Hay>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/description</xpath>
+		<value>
+			<description>A large, reinforced woven basket for storing various goods. Items stored inside will not deteriorate over time and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 4
+Stack per tile: 4
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Covered Clay Pot (1x1, 3/tile, 3 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_CoveredClayPot"]/description</xpath>
+		<value>
+			<description>A covered clay pot for storing a small number of items. Items stored inside do not affect the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 3
+Stack per tile: 3
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Uncovered Clay Pot (1x1, 3/tile, 3 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_UncoveredClayPot"]/description</xpath>
+		<value>
+			<description>An uncovered clay pot for storing a small number of items. Items stored inside do not affect the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 3
+Stack per tile: 3
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Granary (3x3, 5/tile, 45 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_Granary"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>5</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_Granary"]/description</xpath>
+		<value>
+			<description>A large structure for keeping plant food dry. Items stored inside will not deteriorate and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 45
+Stack per tile: 5
+
+Allowed items: Raw plant food, Plant matter</description>
+		</value>
+	</Operation>
+
+	<!-- Large Log Pile (3x1, 4/tile, 12 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_LargeLogPile"]/description</xpath>
+		<value>
+			<description>A designated spot to pile wood logs. Free to build. Items stored will not deteriorate and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 4
+
+Allowed items: Wood logs</description>
+		</value>
+	</Operation>
+
+	<!-- Small Log Pile (1x1, 2/tile, 2 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_SmallLogPile"]/description</xpath>
+		<value>
+			<description>A small designated spot to pile wood logs. Free to build. Items stored will not deteriorate and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 2
+Stack per tile: 2
+
+Allowed items: Wood logs</description>
+		</value>
+	</Operation>
+
+	<!-- Storage Tent (3x3, 3/tile, 27 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_StorageTent"]/description</xpath>
+		<value>
+			<description>A tent for storing various items. Items stored inside will not deteriorate and have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 27
+Stack per tile: 3
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+	<!-- Primitive Weapon Rack (2x1, 4/tile, 8 total) -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/description</xpath>
+		<value>
+			<description>A primitive rack for storing weapons. Does not prevent deterioration. Items stored have no impact on the beauty of their surroundings. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 8
+Stack per tile: 4
+
+Allowed items: Everything</description>
+		</value>
+	</Operation>
+
+</Patch>

@@ -30,5 +30,9 @@
     <li IfModActive="oskarpotocki.vfe.medieval2">1.6/Mods and Shit/VFE Medieval 2</li>
     <li IfModActive="jdgg.adaptive.cargoholds">1.6/Mods and Shit/Cargo Holds</li>
     <li IfModActive="sbz.gravshipstorage">1.6/Mods and Shit/Gravship Storage</li>
+		<li IfModActive="sbz.NeatStorageFridge">1.6/Mods and Shit/SBZ Fridge</li>
+		<li IfModActive="sbz.NeatStorage,reel.expanded.storage">1.6/Mods and Shit/Neat Storage + Reel</li>
+		<li IfModActive="sbz.NeatStorageFridge,reel.expanded.storage">1.6/Mods and Shit/SBZ Fridge + Reel</li>
+
   </v1.6>
 </loadFolders>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_GravshipShelf"]/description</xpath>
+    <value>
+      <description>A gravship shelf. Sleek and sturdy enough to survive the rigors of spaceflight.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 3
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_SmallGravshipShelf"]/description</xpath>
+    <value>
+      <description>A small gravship shelf. Compact enough to fit into tight corridors.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 3
+Stack per tile: 3
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_GravshipGlassShelf"]/description</xpath>
+    <value>
+      <description>A gravship shelf with a glass front. Allows a quick visual inventory check while in transit.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 6
+Stack per tile: 3
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_GravshipTwoTierShelf"]/description</xpath>
+    <value>
+      <description>A double-tiered gravship shelf. Extra capacity for ships with limited floor space.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 12
+Stack per tile: 6
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_GravshipWeaponRack"]/description</xpath>
+    <value>
+      <description>A gravship weapon rack. Keeps arms secured and accessible during flight.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 3
+Stack per tile: 3
+
+Allowed items: Weapons</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_GravshipCrate"]/description</xpath>
+    <value>
+      <description>A gravship cargo crate. Reinforced corners and magnetic latches keep contents secure.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 32
+Stack per tile: 8
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_LargeGravshipCrate"]/description</xpath>
+    <value>
+      <description>A large gravship cargo crate. Standard freight container for gravship cargo holds.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 72
+Stack per tile: 8
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="sbz_LongGravshipCrate"]/description</xpath>
+    <value>
+      <description>A long gravship cargo crate. Spans the full length of a cargo bay wall.
+
+&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt;
+Stack size total: 80
+Stack per tile: 8
+
+Allowed items: Everything</description>
+    </value>
+  </Operation>
+
+</Patch>

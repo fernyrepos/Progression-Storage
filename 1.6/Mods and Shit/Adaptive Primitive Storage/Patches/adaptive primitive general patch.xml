@@ -2,32 +2,11 @@
 <Patch>        
 
 
-<!-- NERFS -->
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_WovenBasket"]/building/maxItemsInCell</xpath>
-                    <value>
-                        <maxItemsInCell>6</maxItemsInCell>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketDouble"]/building/maxItemsInCell</xpath>
-                    <value>
-                        <maxItemsInCell>12</maxItemsInCell>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="ASF_WovenBasketTriple"]/building/maxItemsInCell</xpath>
-                    <value>
-                        <maxItemsInCell>18</maxItemsInCell>
-                    </value>
-                </Operation>
-
-
 <!-- RELABEL -->
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ASF_WeaponRack"]/label</xpath>
                     <value>
-                        <label>primitive weapon rack</label>
+                        <label>makeshift weapon rack</label>
                     </value>
                 </Operation>
 

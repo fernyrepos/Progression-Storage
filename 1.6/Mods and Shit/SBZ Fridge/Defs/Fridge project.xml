@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ResearchProjectDef>
+		<defName>Ferny_Fridges</defName>
+		<label>Fridges</label>
+		<description>Build refrigeration units to keep food fresh for longer periods.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>24.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+		<prerequisites>
+			<li>AirConditioning</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>
